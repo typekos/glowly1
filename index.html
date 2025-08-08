@@ -357,6 +357,76 @@
             box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
         }
 
+        /* Portfolio */
+        .portfolio {
+            background: #f8        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1);
+            gap:2            margin-top:3        }
+
+        .portfolio-card {
+            background: white;
+            border-radius:15          overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0,0.1        transition: all 0.3 ease;
+        }
+
+        .portfolio-card:hover {
+            transform: translateY(-5);
+            box-shadow: 0 20px 40px rgba(0, 0,00.15        }
+
+        .portfolio-image {
+            height: 200        background: linear-gradient(135deg, #6674           display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .portfolio-placeholder {
+            color: white;
+            font-size:3           opacity: 0.8;
+        }
+
+        .portfolio-content {
+            padding:2        }
+
+        .portfolio-content h3 [object Object]         font-size: 10.5            margin-bottom:1
+            color: #333;
+        }
+
+        .portfolio-content p {
+            color: #666;
+            margin-bottom: 10.5;
+            line-height: 1.6;
+        }
+
+        .portfolio-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 00.5            margin-bottom: 10.5        }
+
+        .tag {
+            background: linear-gradient(135deg, #6674
+            color: white;
+            padding: 0.3rem 00.8            border-radius:20;
+            font-size: 00.8;
+            font-weight: 500;
+        }
+
+        .portfolio-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 00.5
+            color: #667;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3 ease;
+        }
+
+        .portfolio-link:hover {
+            color: #764         transform: translateX(5px);
+        }
+
         /* Testimonials */
         .testimonials {
             background: white;
@@ -682,6 +752,52 @@
                     <div class="offer-price">$997/mo</div>
                     <p class="offer-description">Ongoing partnership with monthly strategy calls, content creation, and performance optimization.</p>
                     <a href="#contact" class="offer-button">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="section portfolio">
+        <div class="container">
+            <h2 class="section-title">Portfolio</h2>
+            <p style="text-align: center; font-size: 1.2rem; margin-bottom: 3rem; color: #666;">
+                Here’s a sample of what I can build for ambitious brands and creators.
+            </p>
+            <div class="portfolio-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; margin-top: 3rem;">
+                <div class="portfolio-card" style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: all 0.3s ease;">
+                    <div class="portfolio-image" style="height: 200px; background: linear-gradient(135deg, #667eea, #764ba2); display: flex; align-items: center; justify-content: center;">
+                        <div class="portfolio-placeholder" style="color: white; font-size: 3rem; opacity: 0.8;">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-content" style="padding: 2rem;">
+                        <h3>Glowly Landing Page</h3>
+                        <p>Complete landing page for AI-assisted social media strategy studio. Features modern design, mobile responsiveness, and conversion-optimized layout.</p>
+                        <div class="portfolio-tags" style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem;">
+                            <span class="tag" style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; font-weight: 500;">HTML/CSS</span>
+                            <span class="tag" style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; font-weight: 500;">Responsive Design</span>
+                            <span class="tag" style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; font-weight: 500;">Vercel Deployment</span>
+                        </div>
+                        <a href="https://glowly1-s2re.vercel.app/" target="_blank" class="portfolio-link" style="display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; font-weight: 600; transition: all 0.3s ease;">View Live Site <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-card" style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: all 0.3s ease;">
+                    <div class="portfolio-image" style="height: 200px; background: linear-gradient(135deg, #667eea, #764ba2); display: flex; align-items: center; justify-content: center;">
+                        <div class="portfolio-placeholder" style="color: white; font-size: 3rem; opacity: 0.8;">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-content" style="padding: 2rem;">
+                        <h3>Custom Landing Pages</h3>
+                        <p>Professional landing page design and development for founders, creators, and startups. From concept to live site in days, not weeks.</p>
+                        <div class="portfolio-tags" style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem;">
+                            <span class="tag" style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; font-weight: 500;">Custom Design</span>
+                            <span class="tag" style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; font-weight: 500;">Fast Delivery</span>
+                            <span class="tag" style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; font-weight: 500;">SEO Optimized</span>
+                        </div>
+                        <a href="#contact" class="portfolio-link" style="display: inline-flex; align-items: center; gap: 0.5rem; color: #667eea; text-decoration: none; font-weight: 600; transition: all 0.3s ease;">Let's Build Yours <i class="fas fa-arrow-right"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
